@@ -1,4 +1,15 @@
-class Stars //note that this class does NOT extend Floater
+class Stars 
 {
-  //your code here
+	private int dX, dY;
+ 	public Stars()
+ 	{
+		dX = (int)(Math.random() * 500);
+		dY = (int)(Math.random() * 500);
+	}
+	public void show()
+	{
+		fill(0);
+		point(dX, dY);
+	}
+
 }
