@@ -10,7 +10,7 @@ class Stars
 	{
 		fill(0);
 		
-		point(dX, dY);
+		ellipse(dX, dY, 2,2);
 	}
 
 }
