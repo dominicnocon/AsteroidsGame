@@ -9,6 +9,7 @@ class Stars
 	public void show()
 	{
 		fill(0);
+		
 		point(dX, dY);
 	}
 
