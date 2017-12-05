@@ -6,7 +6,6 @@ class Spaceship extends Floater
 		corners 			= 3;
 		xCorners 			= new int[corners];
 		yCorners 			= new int[corners];
-		xCorners 			= new int[corners];
 		xCorners[0]			= -6;
 		yCorners[0]			= -6;
 		xCorners[1]			=  12;

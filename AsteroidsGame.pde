@@ -1,6 +1,8 @@
 //your variable declarations here
 public Spaceship dom = new Spaceship();
 public Stars[] sky = new Stars[100];
+public ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
+double dist1;
 
 public void setup() 
 	{
@@ -10,21 +12,29 @@ public void setup()
   		for (int i = 0; i< sky.length; i++)
   		{
   			sky[i] = new Stars();
+  		}
 
+  		for (int i = 0; i< 15; i++)
+  		{
+  			rocks.add( new Asteroid());
   		}
 	}
 public void draw() 
 	{
 		 background(200);
 		 for (int i = 0; i< sky.length; i++)
-  		{
-  			sky[i].show();
-
-  		}
-
+		 {
+		 	sky[i].show();
+		 	
+		 }
+		 for (Asteroid ast : rocks)
+		 {
+			 ast.move();
+		 	 ast.show();
+		 	 dist1 = dist(ast.getX(), ast.getY(), dom.getX(), dom.getY());
+		 }
 		 dom.move();
-		 dom.show();
-		 
+		 	dom.show();
 	}
 public void keyPressed()
 	{
@@ -39,7 +49,5 @@ public void keyPressed()
 							dom.setY ((int)(Math.random()*500)); 
 							dom.setPointDirection(((int)(Math.random()*360)));
 						}
-
-
 	}
 
