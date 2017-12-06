@@ -14,7 +14,7 @@ public void setup()
   			sky[i] = new Stars();
   		}
 
-  		for (int i = 0; i< 15; i++)
+  		for (int i = 0; i< 7; i++)
   		{
   			rocks.add( new Asteroid());
   		}
@@ -33,8 +33,9 @@ public void draw()
 		 	 ast.show();
 		 	 dist1 = dist(ast.getX(), ast.getY(), dom.getX(), dom.getY());
 		 }
+		 dom.show();
 		 dom.move();
-		 	dom.show();
+		 
 	}
 public void keyPressed()
 	{

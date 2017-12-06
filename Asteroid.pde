@@ -25,7 +25,7 @@ private int rotSpeed;
   public void setPointDirection(int degrees)  {myPointDirection = degrees;}
   public double getPointDirection()           {return myPointDirection;}
   public void move()                          { 
-                                                rotate(rotSpeed);
+                                                turn(rotSpeed);
                                                 super.move();
                                               }
 }
