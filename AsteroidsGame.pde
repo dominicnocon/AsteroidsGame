@@ -1,6 +1,6 @@
 //your variable declarations here
 public Spaceship dom = new Spaceship();
-public Stars[] sky = new Stars[100];
+public Stars[] sky = new Stars[99];
 public ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
 double dist1;
 
