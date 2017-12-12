@@ -32,6 +32,13 @@ public void draw()
 			 ast.move();
 		 	 ast.show();
 		 	 dist1 = dist(ast.getX(), ast.getY(), dom.getX(), dom.getY());
+		 	 if (dist1 < 20)
+		 	 {
+		 	 	rocks.remove(ast);
+		 	 	break;
+		 	 }
+
+
 		 }
 		 dom.show();
 		 dom.move();
